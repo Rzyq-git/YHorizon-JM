@@ -1,0 +1,37 @@
+YHorizon-JM uses a dual license.
+
+Mechanical design (mechanical/) and electronics (hardware/)
+  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+  (CC BY-NC-SA 4.0, non-commercial)
+  Full text: LICENSES/CC-BY-NC-SA-4.0.txt
+  https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Embedded software, host SDK, and tools (firmware/, sdk/, tools/)
+  GNU General Public License v3.0
+  Full text: LICENSES/GPL-3.0.txt
+  https://www.gnu.org/licenses/gpl-3.0.html
+
+Documentation and other unspecified content default to CC BY-NC-SA 4.0.
+Third-party files keep their own licenses if stated in place.
+
+The authors additionally restrict the project to non-commercial study
+and exchange. Commercial use by others is not permitted.
+
+---
+
+YHorizon-JM 使用双重许可证。
+
+机械结构（mechanical/）和电控硬件（hardware/）
+  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+  （CC BY-NC-SA 4.0，禁止商用）
+  全文见 LICENSES/CC-BY-NC-SA-4.0.txt
+  https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+嵌入式软件、上位机 SDK 与工具（firmware/、sdk/、tools/）
+  GNU General Public License v3.0
+  全文见 LICENSES/GPL-3.0.txt
+  https://www.gnu.org/licenses/gpl-3.0.html
+
+文档与未另行声明的内容，默认按 CC BY-NC-SA 4.0。
+第三方文件若自带许可证，以该文件或其所在目录的说明为准。
+
