@@ -60,7 +60,21 @@
 - 机械零件与外购件：[`mechanical/bom/组装购买清单.xlsx`](mechanical/bom/组装购买清单.xlsx)
 - 驱动器元器件：[`hardware/bom/BOM_YHorizon-JM.xlsx`](hardware/bom/BOM_YHorizon-JM.xlsx)
 
-打板用 [`hardware/fabrication/Gerber_YHorizon-JM.zip`](hardware/fabrication/Gerber_YHorizon-JM.zip)，原理图见 [`hardware/schematic/SCH_YHorizon-JM.pdf`](hardware/schematic/SCH_YHorizon-JM.pdf)。CNC 模型在 `mechanical/cnc/`。**CNC 加工不保证和我们完全一致，建议多试、按自己的加工结果修改孔位。**
+打板用 [`hardware/fabrication/Gerber_YHorizon-JM.zip`](hardware/fabrication/Gerber_YHorizon-JM.zip)，原理图见 [`hardware/schematic/SCH_YHorizon-JM.pdf`](hardware/schematic/SCH_YHorizon-JM.pdf)。**PCB 请加 QQ 群 1124721315 找群主；后续做出 V2 会开源。**
+
+CNC 模型在 `mechanical/cnc/`。**CNC 加工不保证和我们完全一致，建议多试、按自己的加工结果修改孔位。** 下单前请对照螺纹孔注意事项：
+
+<p align="center">
+  <img src="images/CNC下单注意事项螺纹孔1.png" alt="CNC 下单注意事项：螺纹孔 1" width="48%"/>
+  <img src="images/CNC下单注意事项螺纹孔2.png" alt="CNC 下单注意事项：螺纹孔 2" width="48%"/>
+</p>
+<p align="center">
+  <img src="images/CNC下单注意事项螺纹孔3.png" alt="CNC 下单注意事项：螺纹孔 3" width="48%"/>
+  <img src="images/CNC下单注意事项螺纹孔4.png" alt="CNC 下单注意事项：螺纹孔 4" width="48%"/>
+</p>
+<p align="center">
+  CNC 下单注意事项（螺纹孔）
+</p>
 
 也可以买一份我们整理的多余零部件套件，省去自己打板和配齿轮、螺丝：成品驱动板、减速机齿轮和部分螺丝等。预售在闲鱼（口令 **CZ225**）：[套件链接](https://m.tb.cn/h.8FFGGjp?tk=cgNcTkelna0)。
 
@@ -91,7 +105,7 @@
 | `sdk/python/` | 上位机 Python SDK / GUI |
 | `sdk/protocol/` | CAN 协议 |
 | `tools/` | 环境、编译、烧录脚本 |
-| `images/` | 样机照片与 CAD 图 |
+| `images/` | 样机照片、CAD 与 CNC 下单注意事项 |
 
 ## 固件
 

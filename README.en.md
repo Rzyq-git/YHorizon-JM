@@ -60,7 +60,21 @@ Start with the two BOMs for sourcing parts and fabricating the board. Do not ord
 - Mechanical parts and purchased hardware: [`mechanical/bom/组装购买清单.xlsx`](mechanical/bom/组装购买清单.xlsx)
 - Driver electronics: [`hardware/bom/BOM_YHorizon-JM.xlsx`](hardware/bom/BOM_YHorizon-JM.xlsx)
 
-Gerber files: [`hardware/fabrication/Gerber_YHorizon-JM.zip`](hardware/fabrication/Gerber_YHorizon-JM.zip). Schematic: [`hardware/schematic/SCH_YHorizon-JM.pdf`](hardware/schematic/SCH_YHorizon-JM.pdf). CNC models are in `mechanical/cnc/`. **CNC parts are not guaranteed to match ours; try fits and adjust hole positions to your own machining.**
+Gerber files: [`hardware/fabrication/Gerber_YHorizon-JM.zip`](hardware/fabrication/Gerber_YHorizon-JM.zip). Schematic: [`hardware/schematic/SCH_YHorizon-JM.pdf`](hardware/schematic/SCH_YHorizon-JM.pdf). **For the PCB, join QQ group 1124721315 and ask the group owner. V2 will be open-sourced when it is ready.**
+
+CNC models are in `mechanical/cnc/`. **CNC parts are not guaranteed to match ours; try fits and adjust hole positions to your own machining.** Check the threaded-hole notes before ordering:
+
+<p align="center">
+  <img src="images/CNC下单注意事项螺纹孔1.png" alt="CNC order notes: threaded holes 1" width="48%"/>
+  <img src="images/CNC下单注意事项螺纹孔2.png" alt="CNC order notes: threaded holes 2" width="48%"/>
+</p>
+<p align="center">
+  <img src="images/CNC下单注意事项螺纹孔3.png" alt="CNC order notes: threaded holes 3" width="48%"/>
+  <img src="images/CNC下单注意事项螺纹孔4.png" alt="CNC order notes: threaded holes 4" width="48%"/>
+</p>
+<p align="center">
+  CNC order notes (threaded holes)
+</p>
 
 There is also a convenience kit of leftover parts from the authors: a finished driver board, reducer gears, and some screws, so you do not have to fabricate the PCB or source those pieces yourself. Presale is on Xianyu (code **CZ225**): [kit listing](https://m.tb.cn/h.8FFGGjp?tk=cgNcTkelna0).
 
@@ -91,7 +105,7 @@ Replication is for study only. Commercial use is not allowed. Read [SECURITY.en.
 | `sdk/python/` | Host Python SDK / GUI |
 | `sdk/protocol/` | CAN protocol |
 | `tools/` | Setup, build, and flash scripts |
-| `images/` | Prototype photos and CAD |
+| `images/` | Prototype photos, CAD, and CNC order notes |
 
 ## Firmware
 
