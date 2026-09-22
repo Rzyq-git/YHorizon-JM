@@ -83,11 +83,12 @@ You also need tools that are not on the BOM, including:
 - An arbor press (bearings, planet carrier, and similar fits)
 - Loctite threadlocker / retaining compound
 - Hex keys (Allen wrenches)
+- Programmer cable: 0.8 mm insulation-displacement (pierce) terminal wire
 
 Videos:
 
 - Test: [Stage-1 joint motor complete | D57 H52, 8:1, 3 Nm continuous](https://www.bilibili.com/video/BV1CEtB6QELB/)
-- Full assembly: _TBD_
+- Full assembly: [Douyin assembly video](https://v.douyin.com/Lvc5RXRxO6M/)
 
 Replication is for study only. Commercial use is not allowed. Read [SECURITY.en.md](SECURITY.en.md) before assembly or power-up.
 

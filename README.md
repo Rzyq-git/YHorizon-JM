@@ -82,12 +82,13 @@ CNC 模型在 `mechanical/cnc/`。**CNC 加工不保证和我们完全一致，�
 
 - 压力机
 - 乐泰（Loctite）螺纹胶 / 固持胶
-- 内六角扳手
+- 内六角扳手、小十字螺丝刀
+- 烧录器线：0.8 mm 刺破式端子线
 
 装配过程请看下面的视频：
 
 - 测试：[自研关节电机阶段一完成｜D57 H52，8 倍减速，3Nm 稳定输出](https://www.bilibili.com/video/BV1CEtB6QELB/)
-- 总装：_21日发布在B站_
+- 总装：[抖音装配视频](https://v.douyin.com/Lvc5RXRxO6M/)
 
 复刻仅供交流学习，禁止商用。装配和上电前请阅读 [SECURITY.md](SECURITY.md)。
 
