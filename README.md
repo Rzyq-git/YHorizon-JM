@@ -5,6 +5,7 @@
 开源关节电机。喜欢就请点个Star吧，当前仓库里的固件、SDK 和工具面向第一版样机：Classic CAN、GD32F303 驱动板。
 
 > **本项目仅供交流学习。**
+> 机械、电控、固件和 SDK 的源文件已全部公开。
 > 不保证功能可靠、不保证使用安全，也不构成任何产品认证或质量承诺。
 > **禁止他人将本仓库中的设计、固件、SDK 或文档用于商业用途。**
 > 使用本项目造成的人身伤害、设备损坏或其它损失，由使用者自行承担。详见 [SECURITY.md](SECURITY.md)。
@@ -60,9 +61,9 @@
 - 机械零件与外购件：[`mechanical/bom/组装购买清单.xlsx`](mechanical/bom/组装购买清单.xlsx)
 - 驱动器元器件：[`hardware/bom/BOM_YHorizon-JM.xlsx`](hardware/bom/BOM_YHorizon-JM.xlsx)
 
-打板用 [`hardware/fabrication/Gerber_YHorizon-JM.zip`](hardware/fabrication/Gerber_YHorizon-JM.zip)，原理图见 [`hardware/schematic/SCH_YHorizon-JM.pdf`](hardware/schematic/SCH_YHorizon-JM.pdf)。**PCB 请加 QQ 群 1124721315 找群主；后续做出 V2 会开源。**
+PCB 源工程（嘉立创 EDA Pro / EasyEDA Pro）：[`hardware/easyeda/ProPrj_YHorizon-JM.epro2`](hardware/easyeda/ProPrj_YHorizon-JM.epro2)。打板也可用 [`hardware/fabrication/Gerber_YHorizon-JM.zip`](hardware/fabrication/Gerber_YHorizon-JM.zip)，原理图 PDF 见 [`hardware/schematic/SCH_YHorizon-JM.pdf`](hardware/schematic/SCH_YHorizon-JM.pdf)。交流可加 QQ 群 **1124721315**。
 
-CNC 模型在 `mechanical/cnc/`。**CNC 加工不保证和我们完全一致，建议多试、按自己的加工结果修改孔位。** 下单前请对照螺纹孔注意事项：
+装配体 STEP：[`mechanical/asm/YHorizon-JM-asm.STEP`](mechanical/asm/YHorizon-JM-asm.STEP)。CNC 零件在 `mechanical/cnc/`。**CNC 加工不保证和我们完全一致，建议多试、按自己的加工结果修改孔位。** 下单前请对照螺纹孔注意事项：
 
 <p align="center">
   <img src="images/CNC下单注意事项螺纹孔1.png" alt="CNC 下单注意事项：螺纹孔 1" width="48%"/>
@@ -96,9 +97,11 @@ CNC 模型在 `mechanical/cnc/`。**CNC 加工不保证和我们完全一致，�
 
 | 目录 | 内容 |
 | --- | --- |
+| `mechanical/asm/` | 装配体 STEP |
 | `mechanical/cnc/` | CNC 模型 |
 | `mechanical/gears/` | 齿轮 |
 | `mechanical/bom/` | 零件 BOM |
+| `hardware/easyeda/` | 嘉立创 EDA Pro 源工程 |
 | `hardware/schematic/` | 原理图 |
 | `hardware/fabrication/` | 制板文件 |
 | `hardware/bom/` | 元器件 BOM |
@@ -147,7 +150,7 @@ CLI 示例：`python servo_host.py --interface socketcan --channel can0 --id 1 -
 
 ## 许可证
 
-采用双重许可证，详见 [`LICENSE`](LICENSE)。**无论选用哪套许可证，本项目均仅供交流学习，禁止他人商用。**
+采用双重许可证，详见 [`LICENSE`](LICENSE)。**源文件已全部公开；无论选用哪套许可证，本项目均仅供交流学习，禁止他人商用。**
 
 | 内容 | 许可证 | 要点 |
 | --- | --- | --- |

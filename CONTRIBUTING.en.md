@@ -6,8 +6,8 @@ Keep a change in one module when you can. Open an Issue first for large interfac
 
 | Content | Directory |
 | --- | --- |
-| CNC models, gears, mechanical BOM | `mechanical/` |
-| Schematics, fabrication files, electronics BOM | `hardware/` |
+| CNC models, assembly, gears, mechanical BOM | `mechanical/` |
+| EasyEDA / JLCPCB source, schematics, fabrication files, electronics BOM | `hardware/` |
 | Embedded software | `firmware/` |
 | Host SDK | `sdk/` |
 | Calibration / tuning / flashing | `tools/` |

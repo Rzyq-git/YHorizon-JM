@@ -6,8 +6,8 @@
 
 | 内容 | 目录 |
 | --- | --- |
-| CNC 模型、齿轮、零件 BOM | `mechanical/` |
-| 原理图、制板文件、元器件 BOM | `hardware/` |
+| CNC 模型、装配体、齿轮、零件 BOM | `mechanical/` |
+| 嘉立创源工程、原理图、制板文件、元器件 BOM | `hardware/` |
 | 嵌入式软件 | `firmware/` |
 | 上位机 SDK | `sdk/` |
 | 标定 / 调参 / 烧录 | `tools/` |

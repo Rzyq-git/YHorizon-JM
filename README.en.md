@@ -5,6 +5,7 @@
 Open-source joint motor. The firmware, SDK, and tools in this repository target the first prototype: voltage-mode servo, Classic CAN, GD32F303 driver board.
 
 > **This project is for study and technical exchange only.**
+> Mechanical, electronics, firmware, and SDK sources are all published.
 > It does not guarantee reliability or safety, and it is not a product certification or quality commitment.
 > **Commercial use of the designs, firmware, SDK, or documentation in this repository by others is prohibited.**
 > Anyone who uses this project assumes the risk of personal injury, equipment damage, and other loss. See [SECURITY.en.md](SECURITY.en.md).
@@ -60,9 +61,9 @@ Start with the two BOMs for sourcing parts and fabricating the board. Do not ord
 - Mechanical parts and purchased hardware: [`mechanical/bom/组装购买清单.xlsx`](mechanical/bom/组装购买清单.xlsx)
 - Driver electronics: [`hardware/bom/BOM_YHorizon-JM.xlsx`](hardware/bom/BOM_YHorizon-JM.xlsx)
 
-Gerber files: [`hardware/fabrication/Gerber_YHorizon-JM.zip`](hardware/fabrication/Gerber_YHorizon-JM.zip). Schematic: [`hardware/schematic/SCH_YHorizon-JM.pdf`](hardware/schematic/SCH_YHorizon-JM.pdf). **For the PCB, join QQ group 1124721315 and ask the group owner. V2 will be open-sourced when it is ready.**
+PCB source (JLCPCB / EasyEDA Pro): [`hardware/easyeda/ProPrj_YHorizon-JM.epro2`](hardware/easyeda/ProPrj_YHorizon-JM.epro2). Gerber files: [`hardware/fabrication/Gerber_YHorizon-JM.zip`](hardware/fabrication/Gerber_YHorizon-JM.zip). Schematic PDF: [`hardware/schematic/SCH_YHorizon-JM.pdf`](hardware/schematic/SCH_YHorizon-JM.pdf). Discussion: QQ group **1124721315**.
 
-CNC models are in `mechanical/cnc/`. **CNC parts are not guaranteed to match ours; try fits and adjust hole positions to your own machining.** Check the threaded-hole notes before ordering:
+Assembly STEP: [`mechanical/asm/YHorizon-JM-asm.STEP`](mechanical/asm/YHorizon-JM-asm.STEP). CNC parts are in `mechanical/cnc/`. **CNC parts are not guaranteed to match ours; try fits and adjust hole positions to your own machining.** Check the threaded-hole notes before ordering:
 
 <p align="center">
   <img src="images/CNC下单注意事项螺纹孔1.png" alt="CNC order notes: threaded holes 1" width="48%"/>
@@ -96,9 +97,11 @@ Replication is for study only. Commercial use is not allowed. Read [SECURITY.en.
 
 | Path | Contents |
 | --- | --- |
+| `mechanical/asm/` | Assembly STEP |
 | `mechanical/cnc/` | CNC models |
 | `mechanical/gears/` | Gears |
 | `mechanical/bom/` | Mechanical BOM |
+| `hardware/easyeda/` | EasyEDA Pro / JLCPCB source project |
 | `hardware/schematic/` | Schematics |
 | `hardware/fabrication/` | Board fabrication files |
 | `hardware/bom/` | Electronics BOM |
@@ -147,7 +150,7 @@ CLI example: `python servo_host.py --interface socketcan --channel can0 --id 1 -
 
 ## License
 
-Dual license, see [`LICENSE`](LICENSE). **Regardless of which license applies to a given path, this project is for study and exchange only. Commercial use by others is prohibited.**
+Dual license, see [`LICENSE`](LICENSE). **Sources are fully published. Regardless of which license applies to a given path, this project is for study and exchange only. Commercial use by others is prohibited.**
 
 | Content | License | Notes |
 | --- | --- | --- |
