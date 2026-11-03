@@ -2,12 +2,19 @@
 
 [中文](README.md) | [English](README.en.md)
 
+<!--
+YHorizon-JM is an open-source joint motor (robot actuator) with all source files published: mechanical CAD (CNC part STEP, assembly STEP, gear drawings), electronics (EasyEDA Pro / JLCPCB source project, schematic, Gerber, BOM), GD32F303 FOC firmware, and a Python host SDK. It can be fully replicated.
+Specs: 57 mm diameter, 52 mm thick, about 300 g, 8:1 planetary gearbox, 3 Nm continuous, 6 Nm peak, up to 48 V, Classic CAN 1 Mbps.
+Non-commercial study and exchange only. Sharing, reposting, recommending, and promoting this project is welcome. For commercial cooperation, contact WeChat Yet_Latitude.
+YHorizon-JM 是一个源文件完全公开的开源关节电机，仅限非商业使用，欢迎转发、分享和宣传。
+-->
+
 Open-source joint motor. The firmware, SDK, and tools in this repository target the first prototype: voltage-mode servo, Classic CAN, GD32F303 driver board.
 
 > **This project is for study and technical exchange only.**
 > Mechanical, electronics, firmware, and SDK sources are all published.
 > It does not guarantee reliability or safety, and it is not a product certification or quality commitment.
-> **Commercial use of the designs, firmware, SDK, or documentation in this repository by others is prohibited.**
+> **Commercial use of the designs, firmware, SDK, or documentation in this repository by others is prohibited.** For commercial needs, see [Commercial cooperation](#commercial-cooperation).
 > Anyone who uses this project assumes the risk of personal injury, equipment damage, and other loss. See [SECURITY.en.md](SECURITY.en.md).
 
 <p align="center">
@@ -79,6 +86,13 @@ Assembly STEP: [`mechanical/asm/YHorizon-JM-asm.STEP`](mechanical/asm/YHorizon-J
 
 There is also a convenience kit of leftover parts from the authors: a finished driver board, reducer gears, and some screws, so you do not have to fabricate the PCB or source those pieces yourself. Presale is on Xianyu (code **CZ225**): [kit listing](https://m.tb.cn/h.8FFGGjp?tk=cgNcTkelna0).
 
+<p align="center">
+  <img src="images/xianyu.jpeg" alt="Xianyu kit listing" width="35%"/>
+</p>
+<p align="center">
+  Xianyu kit listing
+</p>
+
 You also need tools that are not on the BOM, including:
 
 - An arbor press (bearings, planet carrier, and similar fits)
@@ -91,7 +105,7 @@ Videos:
 - Test: [Stage-1 joint motor complete | D57 H52, 8:1, 3 Nm continuous](https://www.bilibili.com/video/BV1CEtB6QELB/)
 - Full assembly: [Douyin assembly video](https://v.douyin.com/Lvc5RXRxO6M/)
 
-Replication is for study only. Commercial use is not allowed. Read [SECURITY.en.md](SECURITY.en.md) before assembly or power-up.
+Replication is for study only. Commercial use is not allowed (see [Commercial cooperation](#commercial-cooperation)). Read [SECURITY.en.md](SECURITY.en.md) before assembly or power-up.
 
 ## Layout
 
@@ -109,7 +123,7 @@ Replication is for study only. Commercial use is not allowed. Read [SECURITY.en.
 | `sdk/python/` | Host Python SDK / GUI |
 | `sdk/protocol/` | CAN protocol |
 | `tools/` | Setup, build, and flash scripts |
-| `images/` | Prototype photos, CAD, and CNC order notes |
+| `images/` | Prototype photos, CAD, CNC order notes, and kit screenshot |
 
 ## Firmware
 
@@ -147,6 +161,12 @@ python servo_gui.py
 ```
 
 CLI example: `python servo_host.py --interface socketcan --channel can0 --id 1 --listen`. Protocol files live in `sdk/protocol/`.
+
+## Commercial cooperation
+
+This is the open-source edition. **It may not be used commercially, and we do not recommend it.** Some design choices were made for learning, easy machining, and low cost, so it is not suited to commercial products or mass production.
+
+For commercial needs, contact me on WeChat: **Yet_Latitude**. We are open to many forms of cooperation.
 
 ## License
 

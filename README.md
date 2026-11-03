@@ -2,12 +2,19 @@
 
 [中文](README.md) | [English](README.en.md)
 
+<!--
+YHorizon-JM 是一个源文件完全公开的开源关节电机项目：机械结构（CNC 零件 STEP、装配体 STEP、齿轮图纸）、电控硬件（嘉立创 EDA Pro 源工程、原理图、Gerber、BOM）、GD32F303 FOC 固件和 Python 上位机 SDK 全部公开，可以完整复刻。
+参数：直径 57 mm，厚度 52 mm，约 300 g，行星减速 8:1，额定 3 Nm，峰值 6 Nm，最高 48 V，Classic CAN 1 Mbps。
+仅限非商业的学习与交流使用。欢迎转发、分享、推荐和宣传本项目。商业合作请联系微信 Yet_Latitude。
+YHorizon-JM is an open-source joint motor (robot actuator) with all source files published: mechanical CAD, EasyEDA Pro PCB project, schematic, Gerber, BOM, FOC firmware, and Python SDK. Non-commercial use only. Sharing, reposting, and recommending this project is welcome.
+-->
+
 开源关节电机。喜欢就请点个Star吧，当前仓库里的固件、SDK 和工具面向第一版样机：Classic CAN、GD32F303 驱动板。
 
 > **本项目仅供交流学习。**
 > 机械、电控、固件和 SDK 的源文件已全部公开。
 > 不保证功能可靠、不保证使用安全，也不构成任何产品认证或质量承诺。
-> **禁止他人将本仓库中的设计、固件、SDK 或文档用于商业用途。**
+> **禁止他人将本仓库中的设计、固件、SDK 或文档用于商业用途。** 有商业需求请看[商业合作](#商业合作)。
 > 使用本项目造成的人身伤害、设备损坏或其它损失，由使用者自行承担。详见 [SECURITY.md](SECURITY.md)。
 
 <p align="center">
@@ -79,6 +86,13 @@ PCB 源工程（嘉立创 EDA Pro / EasyEDA Pro）：[`hardware/easyeda/ProPrj_Y
 
 也可以买一份我们整理的多余零部件套件，省去自己打板和配齿轮、螺丝：成品驱动板、减速机齿轮和部分螺丝等。预售在闲鱼（口令 **CZ225**）：[套件链接](https://m.tb.cn/h.8FFGGjp?tk=cgNcTkelna0)。
 
+<p align="center">
+  <img src="images/xianyu.jpeg" alt="闲鱼套件页面" width="35%"/>
+</p>
+<p align="center">
+  闲鱼套件页面
+</p>
+
 清单之外需要自己准备的工具（不限于）：
 
 - 压力机
@@ -91,7 +105,7 @@ PCB 源工程（嘉立创 EDA Pro / EasyEDA Pro）：[`hardware/easyeda/ProPrj_Y
 - 测试：[自研关节电机阶段一完成｜D57 H52，8 倍减速，3Nm 稳定输出](https://www.bilibili.com/video/BV1CEtB6QELB/)
 - 总装：[抖音装配视频](https://v.douyin.com/Lvc5RXRxO6M/)
 
-复刻仅供交流学习，禁止商用。装配和上电前请阅读 [SECURITY.md](SECURITY.md)。
+复刻仅供交流学习，禁止商用（商业需求见[商业合作](#商业合作)）。装配和上电前请阅读 [SECURITY.md](SECURITY.md)。
 
 ## 仓库结构
 
@@ -109,7 +123,7 @@ PCB 源工程（嘉立创 EDA Pro / EasyEDA Pro）：[`hardware/easyeda/ProPrj_Y
 | `sdk/python/` | 上位机 Python SDK / GUI |
 | `sdk/protocol/` | CAN 协议 |
 | `tools/` | 环境、编译、烧录脚本 |
-| `images/` | 样机照片、CAD 与 CNC 下单注意事项 |
+| `images/` | 样机照片、CAD、CNC 下单注意事项与套件截图 |
 
 ## 固件
 
@@ -147,6 +161,12 @@ python servo_gui.py
 ```
 
 CLI 示例：`python servo_host.py --interface socketcan --channel can0 --id 1 --listen`。协议说明见 `sdk/protocol/`。
+
+## 商业合作
+
+本项目是开源版本，**不能商用，也不建议商用**。部分设计是为了学习和方便加工、降低成本而做的取舍，不适合直接商用或量产。
+
+如有商业需求，可以联系我，微信：**Yet_Latitude**。合作方式多样，可以具体沟通。
 
 ## 许可证
 

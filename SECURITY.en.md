@@ -10,7 +10,7 @@ Mechanical designs, electronics, firmware, SDK, tools, and documentation in this
 - A joint motor can produce enough torque in a short time to crush a hand, throw a fixture, or damage a gearbox. Wrong wiring, wrong parameters, missing calibration, or failed protection can cause personal injury and property damage.
 - Anyone who machines, assembles, flashes, tests, modifies, or integrates the Project does so at their own risk. Authors and contributors are not liable for direct, indirect, incidental, or consequential damages, including but not limited to personal injury, equipment damage, data loss, downtime, and commercial loss.
 - The Project is not a certified industrial product. Before using it in a humanoid, cobot, near-person setting, vehicle, or any system that could cause harm, the user must complete their own risk assessment, testing, and safety measures.
-- **Commercial use of the Project is prohibited.** Production, sale, paid integration, or other use for profit is outside the authors' authorization. Study, experiment, and open-source collaboration are the intended uses.
+- **Commercial use of the Project is prohibited.** Production, sale, paid integration, or other use for profit is outside the authors' authorization. Study, experiment, and open-source collaboration are the intended uses. This is the open-source edition; some design choices favor learning, easy machining, and low cost, so it is not suited to commercial products or mass production. For commercial needs, contact WeChat **Yet_Latitude**; cooperation terms are open to discussion.
 
 Using, copying, modifying, or distributing the Project means you have read and accepted these terms. Full licenses: [`LICENSE`](LICENSE).
 
